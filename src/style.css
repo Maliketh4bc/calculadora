@@ -94,3 +94,16 @@
   background-color: #444;
   color: white;
 } 
+
+/* Varias calculadoras una al lado de otra */
+.calculadoras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.calculadoras .calculadora {
+  width: 340px;
+  margin: 0;
+}

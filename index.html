@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,7 +7,15 @@
     <title>Calculadora</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h1>Calculadora</h1>
+
+    <!-- Cada div es un hueco para una calculadora. main.ts recorre estos ids con un for -->
+    <div class="calculadoras">
+      <div id="calculadora-1"></div>
+      <div id="calculadora-2"></div>
+      <div id="calculadora-3"></div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

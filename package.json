@@ -11,5 +11,18 @@
   "devDependencies": {
     "typescript": "~5.9.3",
     "vite": "^7.1.7"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanarrow/calc-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanarrow/calc-typescript/issues"
+  },
+  "homepage": "https://github.com/juanarrow/calc-typescript#readme"
 }
