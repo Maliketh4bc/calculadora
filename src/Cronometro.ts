@@ -65,5 +65,28 @@ export class Cronometro {
         const subTiempo = tiempo$.subscribe((ms) => {
             this.display.textContent = this.formatear(ms);
         });
+
+        const subReiniciar = reiniciar$.subscribe(() => {
+            this.display.textContent = '00.00.00';
+            this.botonIniciar.disabled = false;
+        });
+
+        this.subscriptions.push(subTiempo, subReiniciar);
+    }
+
+    private formatear(ms: number): string {
+        const minutos = Math.floor(ms/60000);
+        const segundos = Math.floor((ms%60000)/1000);
+        const centesimas = Math.floor((ms % 1000)/10);
+
+        return `${this.dosCifras(minutos)}:${this.dosCifras(segundos)}.${this.dosCifras(centesimas)}`;
+    }
+
+    private dosCifras(numero: number): string {
+        return numero.toString().padStart(2,'0');
+    }
+
+    destroy(): void{
+        this.subscriptions.forEach((sub) => sub.unsubscribe());
     }
 }
