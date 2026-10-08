@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/juanarrow/calc-typescript/issues"
   },
-  "homepage": "https://github.com/juanarrow/calc-typescript#readme"
+  "homepage": "https://github.com/juanarrow/calc-typescript#readme",
+  "dependencies": {
+    "rxjs": "^7.8.2"
+  }
 }
